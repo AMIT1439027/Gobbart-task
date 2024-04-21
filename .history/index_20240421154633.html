@@ -236,7 +236,7 @@
                                                       type="checkbox"
                                                       name="acceptance-613"
                                                       value="1"
-                                                      aria-invalid="false" required
+                                                      aria-invalid="false"
                                                     /><span
                                                       class="wpcf7-list-item-label"
                                                       >GDPR acceptance</span
@@ -256,7 +256,6 @@
                                                       name="wpgdprc"
                                                       value="1"
                                                       aria-invalid="false"
-                                                      required
                                                     /><span
                                                       class="wpcf7-list-item-label"
                                                       >By using this form you
@@ -461,19 +460,13 @@ $(document).ready(function() {
       event.preventDefault(); 
       alert("form submit succesfully");
 
-      // Check if GDPR acceptance checkbox is checked
-      var gdprCheckbox = document.querySelector('input[name="acceptance-613"]');
-      var wpgdprcCheckbox = document.querySelector('input[name="wpgdprc"]');
-      if (!gdprCheckbox.checked || !wpgdprcCheckbox.checked) {
-        
-        return;
-      }
+     
 
     
       setTimeout(function() {
         successMessage.classList.remove('hidden');
         form.reset(); 
-      }, 1000); // Adjust the delay as needed
+      }, 1000); 
     });
   });
 
