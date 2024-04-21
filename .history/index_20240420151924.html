@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="main" style="opacity: 1">
+            <header class="monolit-header">
+              <div class="header-inner">
+                <div class="logo-holder">
+                  <a href="https://www.bogart.ro/">
+                    <img
+                      src="logo (1).jpg"
+                      width="173"
+                      height="50"
+                      class="monolit-logo"
+                      alt="Gobbart Logo"
+                      style="height: 60px; width: 179px; margin-top: -8px"
+                    />
+                  </a>
+                </div>
+        <div class="humburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Fearures</a>
+                    
+                </li>
+                <li>
+                    <a href="">Pricing</a>
+
+                </li>
+                <li>
+                    <a href="">about</a>
+                </li>
+                <li>
+                    <a href="">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.humburger');
+    const navBar = document.querySelector('.nav-bar');
+
+    hamburger.onclick = () => {
+        navBar.classList.toggle('active');
+    };
+});
+
+       
+    </script>
+</body>
+</html>
