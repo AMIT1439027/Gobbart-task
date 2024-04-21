@@ -457,8 +457,7 @@ $(document).ready(function() {
     var successMessage = document.getElementById('successMessage');
 
     form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
-      alert("form submit succesfully");
+      event.preventDefault(); // Prevent the default form submission
 
       // Check if GDPR acceptance checkbox is checked
       var gdprCheckbox = document.querySelector('input[name="acceptance-613"]');

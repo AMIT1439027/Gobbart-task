@@ -450,15 +450,14 @@ $(document).ready(function() {
       });
 
       // code start 
-     
+      <script>
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('myForm');
     var submitButton = document.getElementById('submit');
     var successMessage = document.getElementById('successMessage');
 
     form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
-      alert("form submit succesfully");
+      event.preventDefault(); // Prevent the default form submission
 
       // Check if GDPR acceptance checkbox is checked
       var gdprCheckbox = document.querySelector('input[name="acceptance-613"]');
@@ -475,7 +474,7 @@ $(document).ready(function() {
       }, 1000); // Adjust the delay as needed
     });
   });
-
+</script>
 
 	
         

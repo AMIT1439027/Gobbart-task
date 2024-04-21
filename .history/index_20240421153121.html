@@ -197,7 +197,6 @@
                                 <div class="bold-title">
                                   <h2>Leave a Message </h2>
                                 </div>
-
                                 <form id="myForm"
                                 action="Welcome.html"
                                 method="post"
@@ -449,34 +448,8 @@ $(document).ready(function() {
         });
       });
 
-      // code start 
-     
-  document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('myForm');
-    var submitButton = document.getElementById('submit');
-    var successMessage = document.getElementById('successMessage');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
-      alert("form submit succesfully");
-
-      // Check if GDPR acceptance checkbox is checked
-      var gdprCheckbox = document.querySelector('input[name="acceptance-613"]');
-      var wpgdprcCheckbox = document.querySelector('input[name="wpgdprc"]');
-      if (!gdprCheckbox.checked || !wpgdprcCheckbox.checked) {
-        alert('Please accept GDPR terms to proceed.');
-        return;
-      }
-
-      // Simulate form submission to show success message
-      setTimeout(function() {
-        successMessage.classList.remove('hidden');
-        form.reset(); // Optionally reset the form after submission
-      }, 1000); // Adjust the delay as needed
-    });
-  });
-
-
+       const data = document.getElementById("submit");
+       if(data===tr)
 	
         
   </script>
